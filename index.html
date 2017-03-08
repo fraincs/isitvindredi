@@ -29,21 +29,29 @@
     <h1>Is it Vindredi?</h1>
     <h2 id="answer"></h2>
     <a href="https://media.giphy.com/media/3osxYlVEO5BDIYYJfa/giphy.gif"><img src="http://www.freeiconspng.com/uploads/wine-glass-png-pic-3.png" width="130px" id="rotate"></a>
+    <img src="http://i.imgur.com/IaLG69W.gif" alt="" id="jeudi">
     <script>
         (function(){
             var d = new Date();
             var n = d.getDay();
             answer = document.getElementById("answer");
             wine = document.getElementById("rotate");
+            jeudredi = document.getElementById("jeudi");
             wine.style.display="none";
             if (n == 6) {
                 txt = document.createTextNode("Oui!");
                 answer.innerText = txt.textContent;
                 wine.style.display="block";
+            }
+            else if (n == 5) {
+                txt = document.createTextNode("Presque! C'est jeudredi!");
+                answer.innerText = txt.textContent;
+                jeudredi.style.display="block";
             } else {
                 txt = document.createTextNode("No");
                 answer.innerText = txt.textContent;
                 wine.style.display="none";
+                jeudredi.style.display="none";
             }
         })();
     </script>
