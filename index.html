@@ -9,10 +9,19 @@
 </head>
 <body style="text-align: center; font-family: Arial, Helvetica, sans-serif;color:#444;">
     <style>
+        body {
+            text-align: center;
+        }
         #rotate {
             animation: rotate .8s infinite;
             position: absolute;
             left: 50%;
+        }
+        #jeudi {
+            text-align: center;
+            display: inline-block;
+            width: 450px;
+            margin: 0 auto;
         }
         @keyframes rotate {
             0% {
@@ -38,12 +47,12 @@
             wine = document.getElementById("rotate");
             jeudredi = document.getElementById("jeudi");
             wine.style.display="none";
-            if (n == 6) {
+            if (n == 5) {
                 txt = document.createTextNode("Oui!");
                 answer.innerText = txt.textContent;
                 wine.style.display="block";
             }
-            else if (n == 5) {
+            else if (n == 4) {
                 txt = document.createTextNode("Presque! C'est jeudredi!");
                 answer.innerText = txt.textContent;
                 jeudredi.style.display="block";
