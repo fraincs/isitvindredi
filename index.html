@@ -57,7 +57,13 @@
                 txt = document.createTextNode("Presque! C'est jeudredi!");
                 answer.innerText = txt.textContent;
                 jeudredi.style.display="block";
-            } else {
+            }
+            else if (n == 6) {
+                txt = document.createTextNode("Non, mais c'est Samedi!");
+                answer.innerText = txt.textContent;
+                jeudredi.style.display="block";
+            }
+            else {
                 txt = document.createTextNode("No");
                 answer.innerText = txt.textContent;
                 wine.style.display="none";
